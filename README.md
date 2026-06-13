@@ -322,7 +322,7 @@ These are hard stops — no governance category overrides them:
 | Item | Priority | Notes |
 |---|---|---|
 | `examples/projects/_template/` | Done | Blank scaffold for new project onboarding |
-| License | Done | MIT |
+| License | Done | Apache 2.0 |
 | Contribution guidelines | Done | Framework grows with owner's projects |
 | Changelog | Done | Start when v1.0 is declared |
 | LiteLLM routing layer | Low | Phase 2 — unified proxy for local/cloud |

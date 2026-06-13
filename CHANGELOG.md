@@ -6,6 +6,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.0.1] — 2026-06-13
+
+### Changed
+
+- Changed license from MIT to Apache License 2.0 for consistency with Syntran-Labs repository policy.
+
+---
+
 ## [1.0.0] — 2026-06-13
 
 ### Added
