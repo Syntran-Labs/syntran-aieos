@@ -1,0 +1,45 @@
+# Secrets and credentials
+.env
+.env.*
+!.env.template
+*.key
+*.pem
+*.p12
+*.json.secret
+service-account*.json
+credentials*.json
+token*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+.pytest_cache/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Local tooling
+*.log
+*.tmp
+
+# Claude Code local settings — machine-specific, never commit
+.claude/settings.json
+.claude/settings.local.json
+
+# Telemetry data — personal session data, never commit
+telemetry/usage.csv
+telemetry/

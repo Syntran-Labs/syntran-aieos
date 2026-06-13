@@ -1,0 +1,50 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "Bash(git commit -m *)",
+      "Bash(npm --version)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)"
+    ],
+    "additionalDirectories": []
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NonInteractive -File \"<ABSOLUTE_PATH_TO_REPO>\\scripts\\telemetry\\log_prompt.ps1\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NonInteractive -File \"<ABSOLUTE_PATH_TO_REPO>\\scripts\\telemetry\\log_command.ps1\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NonInteractive -File \"<ABSOLUTE_PATH_TO_REPO>\\scripts\\telemetry\\log_stop.ps1\""
+          }
+        ]
+      }
+    ]
+  }
+}
